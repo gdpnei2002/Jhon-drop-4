@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import styled, { DefaultTheme, ThemeProvider } from "styled-components";
 import ResponsiveAppBar from '../../components/navbar/navbar';
+import PermisssionGate from '@/components/permission/PermissionGate';
+import usePeristedState from "../../utils/usePersistedState";
 import light from "../../styles/themes/light";
 import dark from "../../styles/themes/dark";
 import GlobalStyle from "../../styles/globals";
-import usePeristedState from "../../utils/usePersistedState";
-import PermisssionGate from '@/components/permission/PermissionGate';
 
 export const Section = styled.section`
   background: ${props => props.theme.colors.background};

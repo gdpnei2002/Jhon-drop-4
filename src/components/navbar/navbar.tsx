@@ -48,7 +48,7 @@ const ResponsiveAppBar: React.FC<Props> = ({ toggleTheme }) => {
   };
   
   const { colors, title } = useContext(ThemeContext);
-
+  
   return (
     <AppBar position="static" sx={{background: "${props => props.theme.colors.primary}"}}>
       <Container maxWidth="xl">
